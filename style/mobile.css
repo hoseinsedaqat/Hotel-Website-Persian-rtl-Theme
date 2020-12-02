@@ -1,0 +1,81 @@
+#navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar ul {
+    margin-top: 0.7rem;
+}
+
+#header .header-content h3 {
+    font-size: 1.5rem;
+}
+
+#header .header-content p {
+    font-size: 1rem;
+}
+
+#header .header-content {
+    padding-top: 14rem;
+}
+
+#info .info-container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+#features .features-container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+#features .features-container div {
+    border: none;
+    border-bottom: 1px dashed #333;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.8rem;
+}
+
+#features .features-container div:last-child {
+    border: none;
+}
+
+#about .about-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 5rem;
+    text-align: center;
+}
+
+#award .award-container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+#award .award-container div {
+    padding-bottom: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+#comment .comment-container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+#contact-b .contact-container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+#contact-b .contact-container div {
+    border-bottom: 1px solid #333;
+    padding-bottom: 0.8rem;
+    margin-bottom: 0.5rem;
+}
+
+#contact-b .contact-container div:last-child {
+    border-bottom: none;
+}
+

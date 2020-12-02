@@ -1,0 +1,334 @@
+/* Add Gandom Font to Website */
+
+@font-face {
+    font-family: 'Gandom';
+    src: url('../font/Gandom.ttf') format('woff');
+}
+
+/* Default styling */
+
+:root {
+    --dark-color: #333;
+    --max-width: 1100px;
+    --light-color: #f4f4f4;
+    --award-color: #ffff4d;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Utilities Class */
+
+.btn {
+    display: inline-block;
+    border: none;
+    color: #fff;
+}
+
+.btn-dark {
+    background-color: var(--dark-color);
+    padding: 0.5rem 3rem;
+    border-radius: 0.5rem;
+    transition: all 0.7s ease-in;
+}
+
+.btn-dark:hover {
+    background-color: #ffad33;
+    border-radius: 0;
+}
+
+.bg-dark {
+    background-color: var(--dark-color);
+}
+
+.bg-light {
+    background-color: var(--light-color);
+}
+
+.current {
+    border-bottom: 2px solid orange;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.primary-color {
+    color: #ffad33;
+}
+
+.container {
+    margin: auto;
+    max-width: var(--max-width);
+    padding: 0 20px;
+    overflow: hidden;
+}
+
+body {
+    font-family: 'Gandom', sans-serif;
+    line-height: 1.7;
+    direction: rtl;
+    color: #fff;
+}
+
+/* Start Styling Navbar&Header */
+
+#header {
+    background: url('../photos/showcase.jpg') no-repeat center center/cover;
+    height: 100vh;
+}
+
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: var(--dark-color);
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#navbar ul {
+    display: flex;
+}
+
+#navbar ul li {
+    padding: 0 1rem;
+}
+
+#navbar i {
+    color: coral;
+}
+
+#navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#header .header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 18rem;
+}
+
+#header .header-content h3 {
+    font-size: 2.3rem;
+    padding-bottom: 0.5rem;
+}
+
+#header .header-content p {
+    font-size: 1rem;
+    padding: 0.5rem 0;
+}
+
+/* information Styling */
+
+#info {
+    background-color: var(--light-color);
+}
+
+#info .info-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#info .info-edit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    color: var(--dark-color);
+}
+
+/* Features Styling */
+
+#features {
+    padding: 2rem;
+}
+
+.features-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    padding: 2rem;
+    margin: 0 1rem;
+    color: var(--dark-color);
+}
+
+.features-container div {
+    border-right: 1px solid var(--dark-color);
+}
+
+.features-container div:first-child {
+    border-right: none;
+}
+
+/* About-Us Hotel */
+
+#about {
+    padding: 4rem 0;
+}
+
+.about-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+    color: var(--dark-color);
+    padding: 2rem;
+}
+
+.about-container img {
+    box-shadow: 1px 1px 10px #333;
+}
+
+/* Award Styling */
+
+#award {
+    color: var(--dark-color);
+}
+
+#award .award-container i {
+    color: var(--award-color);
+}
+
+#award h3 {
+    text-align: center;
+    display: block;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    margin: 0.5rem 1rem;
+}
+
+#award .award-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+    padding: 2rem;
+    text-align: center;
+}
+
+/* Comment-About Hotel */
+
+#comment {
+    color: var(--dark-color);
+}
+
+#comment h3 {
+    display: block;
+    text-align: center;
+    border: 1px solid #ddd;
+    margin: 0.5rem 1rem;
+    padding: 0.5rem;
+}
+
+.comment-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0.5rem;
+    margin: 0.5rem 1rem;
+}
+
+.comment-container img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.comment-container ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+}
+
+.comment-container p {
+    border: 1px solid #ddd;
+    padding: 2rem;
+}
+
+.comment-container ul li {
+    margin: 0.5rem 0.5rem;
+}
+
+/* Contact Styling */
+
+#contact-a {
+    padding: 8rem 0;
+    color: var(--dark-color);
+}
+
+#contact-a .form-group label {
+    display: block;
+    margin: 0.3rem 0;
+}
+
+#contact-a .form-group input {
+    display: block;
+    width: 100%;
+    border: 1px solid #ddd;
+    outline-color: #ddd;
+    padding: 0.3rem;
+}
+
+#contact-a .form-group textarea {
+    display: block;
+    width: 100%;
+    border: 1px solid #ddd;
+    outline-color: #ddd;
+    height: 10rem;
+}
+
+#contact-a button {
+    margin: 1rem 0;
+    cursor: pointer;
+    padding: 0.6rem 3rem;
+}
+
+#contact-b {
+    background-color: #ffad33;
+    color: var(--light-color);
+    padding: 3rem;
+}
+
+#contact-b .contact-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+    text-align: center;
+}
+
+/* Footer Styling */
+
+#main-footer {
+    background-color: var(--dark-color);
+    padding: 2rem;
+    color: #fff;
+    text-align: center;
+}
+
+/*  For LandScape Mode  */
+
+@media(max-height:678px) {
+    #header .header-content {
+        padding-top: 10rem;
+    }
+}
