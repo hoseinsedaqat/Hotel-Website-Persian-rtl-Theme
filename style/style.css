@@ -332,20 +332,3 @@ body {
         padding-top: 10rem;
     }
 }
-
-/* For Spinner */
-
-.loading-spinner {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.loading-spinner img {
-    margin-top: 5rem;
-    width: 600px;
-    height: 400px;
-}
